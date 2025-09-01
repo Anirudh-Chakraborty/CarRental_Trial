@@ -1,0 +1,196 @@
+/* Booking box inside dialog */
+.booking-box {
+	position: absolute;
+	left: 32px;
+	bottom: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	z-index: 2;
+}
+
+.booking-label {
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Inter', Arial, sans-serif;
+	font-weight: 600;
+	margin-bottom: 15px;
+	margin-left: 4px;
+	letter-spacing: 0.5px;
+}
+
+.booking-input-box {
+	width: 283.5px;
+	height: 56px;
+	background: #fff;
+	border-radius: 16px;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
+	padding: 0 16px;
+	box-sizing: border-box;
+	gap: 12px;
+}
+
+.location-icon {
+	width: 24px;
+	height: 24px;
+	object-fit: contain;
+	display: block;
+}
+
+.booking-input {
+	border: none;
+	outline: none;
+	font-size: 16px;
+	font-family: 'Inter', Arial, sans-serif;
+	color: #222;
+	background: transparent;
+	flex: 1;
+	padding: 8px 0;
+}
+
+.glass-dialog {
+	position: fixed;
+	left: 50%;
+	bottom: 40px;
+	transform: translateX(-50%);
+	width: 1216px;
+	height: 145px;
+	border-radius: 32px;
+	border: none;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-start;
+	z-index: 30;
+	max-width: 95vw;
+	box-sizing: border-box;
+	box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);
+	padding: 0;
+}
+/* Dialog text style */
+.dialog-text {
+	color: #000000;
+	font-size: 2rem;
+	font-family: 'Figtree', Arial, sans-serif;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+/* Header styles */
+.main-header {
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 24px 40px 0 40px;
+	box-sizing: border-box;
+	z-index: 20;
+}
+
+.header-logo {
+	width: 178.17px;
+	height: 16.49px;
+	object-fit: contain;
+	display: block;
+}
+
+.login-btn {
+	width: 180px;
+	height: 50px;
+	border: 1.5px solid #fff;
+	border-radius: 48px;
+	background: transparent;
+	color: #fff;
+	font-family: 'Inter', Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 8px 24px;
+	cursor: pointer;
+	transition: 0.2s, color 0.2s;
+	outline: none;
+	box-sizing: border-box;
+}
+.login-btn:hover {
+	background: #fff;
+	color: #000;
+}
+/* Heading styles */
+.main-heading {
+	position: absolute;
+	top: 160px;
+	left: 0;
+	width: 100vw;
+	text-align: center;
+	color: #fff;
+	font-size: 60px;
+	font-family: 'Figtree', Arial, sans-serif;
+	letter-spacing: 2px;
+	z-index: 10;
+	text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+	margin: 0;
+	padding: 0;
+}
+body, html {
+	min-height: 1300px;
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	overflow-x: hidden;
+	background: #fff;
+}
+
+.center-image-bg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	min-height: 700px;
+	background: #000; /* Optional: black background for contrast */
+	overflow: hidden;
+}
+
+/* White section after the image */
+.white-section {
+	width: 100vw;
+	min-height: 600px;
+	background: #000000;
+	margin: 0;
+	padding: 0;
+}
+
+/* Booking dialog box at the bottom center */
+.glass-dialog {
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	transform: translateX(-50%);
+	width: 1216px;
+	height: 145px;
+	border-radius: 32px;
+	border: 2px solid #ffffff;
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.08);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 30;
+	max-width: 95vw;
+	box-sizing: border-box;
+	box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);
+}
+
+
+.center-image {
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	height: auto;
+	display: block;
+	margin: auto;
+	transform: scale(1.1);
+	/* Keep the image sharp and centered */
+	transform-origin: center center;
+}
