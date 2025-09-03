@@ -1,27 +1,93 @@
-/* Find a Vehicle button styles */
-.find-vehicle-btn {
+/* Subheading button row styles */
+.subheading-btn-row {
+		position: absolute;
+		right: 320px;
+		margin: 0 auto;
+		top: 500px; /* adjust as needed to be below subheading */
+		display: flex;
+		flex-direction: row;
+		gap: 16px;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		z-index: 10;
+}
+
+.btn-black, .btn-white {
+	width: 260px;
 	height: 56px;
-	width: 150px;
-	border: none;
+	font-family: 'Inter', Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
 	border-radius: 12px;
-	font-size: 1rem;
+	border: 1px solid #fff;
+	cursor: pointer;
+	transition: 0.2s, color 0.2s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+}
+
+.btn-black {
+	background: #000;
+	color: #fff;
+}
+.btn-black:hover {
+	background: #ffffff;
+	color: black;
+}
+
+.btn-white {
+	background: #fff;
+	color: #000;
+	border: 1px solid #ffffff;
+}
+.btn-white:hover {
+	background: #000000;
+	color: #fff;
+
+}
+
+/* Search a Vehicle button styles */
+.button-row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* center button under inputs */
+}
+
+.search-vehicle-btn {
+	position: relative;
+	top: 4px; /* pushes button lower */
+	transform: translateX(18%); /* centers button */
+	height: 50px;
+	width: 350px;
+	background: transparent;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	font-size: 1.2rem;
 	font-family: 'Inter', Arial, sans-serif;
 	font-weight: 600;
-	margin-left: 16px;
+	margin-left: 4px;
 	cursor: pointer;
 	box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: all 0.3s ease; /* smooth effect */
+	line-height: 2; 
+
 }
-.find-vehicle-btn:hover {
-	background: #ffffff;
+.search-vehicle-btn:hover {
+    background: #fff; /* white fill */
+    color: #000; /* black text */
 }
 /* Booking box inside dialog */
 /* Inside Box One */
 .booking-box {
 	position: absolute;
-	left: 32px;
+	left: 20px;
 	bottom: 24px;
 	display: flex;
 	flex-direction: column;
@@ -48,7 +114,7 @@
 	font-size: 16px;
 	font-family: 'Inter', Arial, sans-serif;
 	font-weight: 600;
-	margin-bottom: 15px;
+	margin-bottom: 8px;
 	margin-left: 4px;
 	letter-spacing: 0.5px;
 }
@@ -100,7 +166,7 @@
 	border: none;
 }
 
-/* Drop-off Location box styles */
+/* Location box styles */
 .booking-input-box.dropoff-location-box {
 	width: 283px;
 	height: 56px;
@@ -142,8 +208,9 @@
 .main-header {
 	width: 100vw;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: flex-start;
+	gap: 60px;
+	align-items: left;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -157,6 +224,8 @@
 	height: 16.49px;
 	object-fit: contain;
 	display: block;
+	margin-left: 60px; /* shift left (adjust as needed) */
+
 }
 
 .login-btn {
@@ -170,10 +239,12 @@
 	font-size: 16px;
 	font-weight: 600;
 	padding: 8px 24px;
+	margin-left: 900px; /* shift left (adjust as needed) */
 	cursor: pointer;
 	transition: 0.2s, color 0.2s;
 	outline: none;
 	box-sizing: border-box;
+
 }
 .login-btn:hover {
 	background: #fff;
@@ -181,20 +252,39 @@
 }
 /* Heading styles */
 .main-heading {
-	position: absolute;
-	top: 160px;
-	left: 0;
-	width: 100vw;
-	text-align: center;
-	color: #fff;
-	font-size: 60px;
-	font-family: 'Figtree', Arial, sans-serif;
-	letter-spacing: 2px;
-	z-index: 10;
-	text-shadow: 0 2px 8px rgba(0,0,0,0.5);
-	margin: 0;
-	padding: 0;
+   position: absolute;
+    top: 120px; /* adjust vertically */
+    width: 100%;
+	left: 10%;
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Figtree', Arial, sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    margin: 0;
+	z-index: 10; /* <-- ensures text stays above the image */
+
 }
+
+/* Sub-heading styles */
+.sub-heading {
+    position: absolute;
+    top: 350px; /* below main-heading */
+    width: 100%;
+	left: 10%;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Figtree', Arial, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    margin-top: 20px;
+	line-height: 1.8; /* <-- add this */
+	z-index: 10; /* <-- ensures text stays above the image */
+
+}
+
 body, html {
 	min-height: 1300px;
 	margin: 0;
@@ -206,12 +296,15 @@ body, html {
 
 .center-image-bg {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100vw;
-	min-height: 700px;
-	background: #000; /* Optional: black background for contrast */
-	overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 700px;
+  background: #000;
+  overflow: hidden;
+  position: relative;
+  z-index: 1; /* <-- image stays below text */
 }
 
 /* White section after the image */
@@ -225,33 +318,34 @@ body, html {
 
 /* Booking dialog box at the bottom center */
 .glass-dialog {
-	position: absolute;
+	position: fixed;
 	left: 50%;
 	bottom: 90px;
 	transform: translateX(-50%);
-	width: 1216px;
-	height: 145px;
+	width: 535px;
+	height: 195px;
 	border-radius: 32px;
-	border: 2px solid #ffffff;
-    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.08);
+	background: rgba(255, 255, 255, 0.15);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(16px) saturate(180%);
+	-webkit-backdrop-filter: blur(16px) saturate(180%);
+	border: 1.5px solid rgba(255, 255, 255, 0.747);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	z-index: 30;
 	max-width: 95vw;
 	box-sizing: border-box;
-	box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);
 }
 
 
 .center-image {
-	max-width: 100%;
-	max-height: 100%;
-	width: auto;
-	height: auto;
-	display: block;
-	margin: auto;
-	transform: scale(1.1);
-	/* Keep the image sharp and centered */
-	transform-origin: center center;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+  transform: scale(1.45) translateX(30%) translateY(-60px); /* zoom + shift left */
+  transform-origin: center center;
+  z-index: 0; /* <-- image stays below text */
 }
+

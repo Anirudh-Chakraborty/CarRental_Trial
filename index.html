@@ -1,73 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Car Rental - Welcome</title>
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-	<header class="main-header">
-		<img src="Resources/Heading.png" alt="Logo" class="header-logo">
-		<button class="login-btn">Login / Register</button>
-	</header>
-	<h1 class="main-heading">Discover the World on Wheels <br> with our Car Rental service</h1>
-	<div class="center-image-bg">
-		<img src="Resources/BlackCar.png" alt="Black Car" class="center-image">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental - Welcome</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <img src="Resources/Heading.png" alt="Logo" class="header-logo" />
+      <button class="login-btn">Login / Register</button>
+    </header>
+
+    <div class="center-image-bg">
+		
+      <h1 class="main-heading">
+        Discover the World on<br />
+        Wheels with our <br />
+        Car Rental service
+      </h1>
+      <h2 class="sub-heading">
+        Choose from a wide range of cars that fit your style and budget.<br />
+        Experience the freedom of the open road with our reliable<br />
+        and efficient rental service.
+      </h2>
+
+      <div class="subheading-btn-row">
+
+        <button class="btn-black">Black Button</button>
+        <button class="btn-white">White Button</button>
+      
 	</div>
-	<div class="white-section"></div>
-	<div class="glass-dialog">
+      <img src="Resources/BlackCar.png" alt="Black Car" class="center-image" />
+    </div>
+    <div class="white-section"></div>
 
-	    <!-- GlassBox Starts -->
+    <div class="glass-dialog">
+  <div class="booking-box">
 
-		<div class="booking-box">
-			<div class="booking-input-group">
-				
-				<!-- Pick-up Location -->
-				<div class="booking-input-col">
-					<label class="booking-label">Pick-Up Location</label>
-					<div class="booking-input-box location-box">
-						<img src="Resources/Location.png" alt="Location Icon" class="location-icon">
-						<input type="text" class="booking-input" placeholder="Select it">
-					</div>
-				</div>
-				
-				<!-- Pick-up Date -->
-				<div class="booking-input-col">
-					<label class="booking-label">Pick-Up Date</label>
-					<div class="booking-input-box date-box">
-						<img src="Resources/Calendar.png" alt="Calendar Icon" class="calendar-icon calendar-icon-left">
-						<input type="text" class="booking-input" placeholder="Select it">
-					</div>
-				</div>
-				<!-- Drop-of Location -->
-				<div class="booking-input-col">
-					<label class="booking-label">Drop-off Location</label>
-					<div class="booking-input-box dropoff-location-box">
-						<img src="Resources/Location.png" alt="Location Icon" class="location-icon" >
-						<input type="text" class="booking-input" placeholder="Select it">
-					</div>
-				</div>
+    <!-- Input group -->
+    <div class="booking-input-group">
+      <!-- Pick-up Location -->
+      <div class="booking-input-col">
+        <label class="booking-label">Pick-Up Location</label>
+        <div class="booking-input-box location-box">
+          <img src="Resources/Location.png" alt="Location Icon" class="location-icon">
+          <input type="text" class="booking-input" placeholder="Select it">
+        </div>
+      </div>
 
-				<!-- Drop-of Date -->
-				<div class="booking-input-col">
-					<label class="booking-label">Drop-off Date</label>
-					<div class="booking-input-box date-box">
-						<img src="Resources/Calendar.png" alt="Calendar Icon" class="calendar-icon calendar-icon-left">
-						<input type="text" class="booking-input" placeholder="Select it">
-					</div>
-				</div>
-				<!-- Find a Vehicle Button -->
-				<button class="find-vehicle-btn">Find a Vehicle</button>
-			</div>
-			</div>
-		</div>
-	</div>
-</body>
+      <!-- Pick-up Date -->
+      <div class="booking-input-col">
+        <label class="booking-label">Pick-Up Date</label>
+        <div class="booking-input-box date-box">
+          <img src="Resources/Calendar.png" alt="Calendar Icon" class="calendar-icon calendar-icon-left">
+          <input type="text" class="booking-input" placeholder="Select it">
+        </div>
+      </div>
+    </div>
+
+    <!-- Button row (outside input group, new row) -->
+    <div class="button-row">
+      <button class="search-vehicle-btn">Search</button>
+    </div>
+
+  </div>
+</div>
+  </body>
 </html>
-
-
-
-
