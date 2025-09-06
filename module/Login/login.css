@@ -8,6 +8,11 @@ body {
     height: 100%;
     padding: 150px 150px 150px 425px;      /* top | right | bottom | left */
     margin: 0;
+    opacity: 0;
+    transition: opacity 1s;
+}
+body.fade-in-bg {
+    opacity: 1;
 }
 .login-container {
     display: block;
@@ -24,11 +29,12 @@ body {
     color: #fff; /* <-- make all text inside white */
     z-index: 2;
     opacity: 0;
-    animation: fadeInLogin 1s ease forwards;
+    transition: opacity 1s, transform 1s;
+    transform: translateY(30px);
 }
-@keyframes fadeInLogin {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
+.login-container.fade-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 .login-container h1, .login-container h2, .login-container form, .login-container .register-link {
     text-align: center;
