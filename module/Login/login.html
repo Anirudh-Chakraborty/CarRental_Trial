@@ -4,68 +4,11 @@
     <meta charset="UTF-8">
     <title>Car Rental Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            background: #f4f4f4;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .login-container {
-            background: #fff;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            width: 320px;
-        }
-        .login-container h2 {
-            text-align: center;
-            margin-bottom: 1.5rem;
-        }
-        .form-group {
-            margin-bottom: 1rem;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-        }
-        .form-group input {
-            width: 100%;
-            padding: 0.5rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .login-btn {
-            width: 100%;
-            padding: 0.75rem;
-            background: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            font-size: 1rem;
-            cursor: pointer;
-        }
-        .login-btn:hover {
-            background: #0056b3;
-        }
-        .login-container .register-link {
-            display: block;
-            text-align: center;
-            margin-top: 1rem;
-            color: #007bff;
-            text-decoration: none;
-        }
-        .login-container .register-link:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <div class="login-container">
-        <h2>Login</h2>
+        <h1>Login</h1>
         <form>
             <div class="form-group">
                 <label for="username">Username or Email</label>
@@ -77,7 +20,13 @@
             </div>
             <button type="submit" class="login-btn">Login</button>
         </form>
-        <a href="#" class="register-link">Don't have an account? Register</a>
+        <a href="#" class="register-link">Forget Password</a>
+        <div class="or-divider">
+            <span class="line"></span>
+            <span class="or-text">Or</span>
+            <span class="line"></span>
+        </div>
+        <button type="button" class="signup-btn">Sign Up</button>
     </div>
 </body>
 </html>

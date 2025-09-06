@@ -1,0 +1,132 @@
+body {
+    background: url('../../Resources/LoginCar.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    height: 100%;
+    padding: 150px 150px 150px 425px;      /* top | right | bottom | left */
+    margin: 0;
+}
+.login-container {
+    display: block;
+    background: rgba(0, 0, 0, 0.2); /* transparent glass */
+    padding: 2rem;
+    margin-left: 80px; /* push right */
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px); /* frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border: 1px solid rgb(255, 255, 255);
+    width: 350px;
+    height: 460px;
+    color: #fff; /* <-- make all text inside white */
+    z-index: 2;
+    opacity: 0;
+    animation: fadeInLogin 1s ease forwards;
+}
+@keyframes fadeInLogin {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.login-container h1, .login-container h2, .login-container form, .login-container .register-link {
+    text-align: center;
+    width: 100%;
+}
+.login-container h1 {
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+.form-group label {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.form-group input {
+    width: 95%;
+    padding: 0.5rem;
+    background: #ffffff00;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.login-btn {
+    width: 60%;
+    padding: 0.75rem;
+    background: rgba(0, 123, 255, 0);
+    color: #fff;
+    border: 1px solid white;
+    background: rgb(0, 0, 0);
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: 0.2s;
+}
+.login-btn:hover {
+    font-weight: bold;
+    color: black;
+    background: #ffffff;
+}
+.register-link {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+.register-link:hover {
+    text-decoration: underline;
+}
+.signup-btn {
+    width: 60%;
+    padding: 0.75rem;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    transition: 0.2s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.signup-btn:hover {
+    font-weight: bold;
+    color: black;
+    background: #ffffff;
+}
+.or-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+    width: 100%;
+}
+.or-divider .line {
+    flex: 1;
+    height: 1px;
+    background: #fff;
+    opacity: 0.7;
+}
+.or-divider .or-text {
+    margin: 0 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    opacity: 0.8;
+}
